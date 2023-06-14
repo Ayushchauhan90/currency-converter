@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>currency convator</title>
+  </head>
+<body>
+    <div class="main-class">
+      <form class="form">
+        <h1>Currency Converter</h1>
+      <p>Select Currency and enter Amount to convert.</p>
+        <div class="select">
+        <lable class="label">Select Country</lable><br>
+        <select id="from" class="option">
+          <option></option>
+          <option name="USD" value="USD">USD</option>
+          <option name="EURO" value="EUR">EURO</option>
+          <option name="UAED" value="AED">UAED</option>
+          <option name="Swiss Franc" value="CHF">Swiss Franc</option>
+          <option name="Japanese Yen" value="JPY">Japanese Yen</option>
+          <option name="South African Rand" value="ZAR">South African Rand</option>
+          <option name="British Pound" value="GBP">British Pound</option>
+          <option name="INR" value="INR">INR</option>
+        </select>
+        <label>TO</label>
+        <select id="to" class="option">
+          <option></option>
+          <option name="USD" value="USD">USD</option>
+          <option name="EURO" value="EUR">EURO</option>
+          <option name="UAED" value="AED">UAED</option>
+          <option name="Swiss Franc" value="CHF">Swiss Franc</option>
+          <option name="Japanese Yen" value="JPY">Japanese Yen</option>
+          <option name="South African Rand" value="ZAR">South African Rand</option>
+          <option name="British Pound" value="GBP">British Pound</option>
+          <option name="INR" value="INR">INR</option>
+        </select>
+    </div>
+    <div class="dawn-container">
+        <div class="manage">
+        <label class="label">Amount</label><br>
+        <input type="number" id="amount" />
+    </div>
+    <div class="manage">
+        <button type="button" id="calculate">Check</button>
+        <!-- <p class="result"></p> -->
+    </div>
+    </div>
+    <p class="result"></p>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+  <!-- <script>
+    $(document).ready(function () {
+      $("#calculate").click(function () {
+        var from = $("#from").val();
+        var amount = $("#amount").val();
+        var to = $("#to").val();
+        var total = parseFloat((amount * from) / to);
+        var country_select = document.querySelector("#from");
+        var fromname =
+          country_select.options[country_select.selectedIndex].getAttribute(
+            "name"
+          );
+        console.log(fromname);
+        var tocountry_select = document.querySelector("#to");
+        var toname =
+          tocountry_select.options[tocountry_select.selectedIndex].getAttribute(
+            "name"
+          );
+        console.log(fromname);
+        if (total == "") {
+          $(".result").text("**Enter a number").addClass("before-result");
+        } else if (total <= 999) {
+          $(".result")
+            .text(`${amount} ${fromname}=${total.toFixed(2)} ${toname}`)
+            .addClass("after-result");
+        } else if (total >= 1000 && total <= 999999) {
+          $(".result")
+            .text(
+              `${amount} ${fromname} = ${
+                (total / 1000).toFixed(2) + "K"
+              } ${toname}`
+            )
+            .addClass("after-result");
+        } else if (total >= 1000000 && total <= 999999999) {
+          $(".result")
+            .text(
+              `${amount} ${fromname} = ${
+                (total / 1000000).toFixed(2) + "M"
+              } ${toname}`
+            )
+            .addClass("after-result");
+        } else if (total >= 1000000000 && total <= 999999999999) {
+          $(".result")
+            .text(
+              `${amount} ${fromname} = ${
+                (total / 1000000000).toFixed(2) + "B"
+              } ${toname}`
+            )
+            .addClass("after-result");
+        }
+      });
+    });
+  </script> -->
+</html>

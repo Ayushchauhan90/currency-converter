@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+.main-class {
+    width: 57%;
+    margin: auto;
+    background: bisque;
+    padding: 14px 44px;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+.option {
+    background: #f0f0f0;
+    width: 30%;
+    padding: 4px 3px;
+    border-radius: 6px;
+}
+.dawn-container {
+    display: flex;
+    margin: 12px 0;
+    align-items: end;
+}
+.manage{
+    width:35%;
+}
+input#amount {
+    width: 78%;
+    padding: 4px 9px;
+    border-radius: 6px;
+}
+button#calculate {
+    padding: 5px 16px;
+    background: #d45050;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid brown;
+    border-radius: 8px;
+}
+p.result {
+    border-radius: 10px;
+    background: #fff;
+    width: 50%;
+}
+
+.before-result {
+  color: red;
+  padding: 9px 16px;
+}
+
+.after-result {
+  color: #000;
+  padding: 9px 16px;
+}
+@media(max-width:600px) {
+    .main-class {
+        width: 100%;
+        padding: 0;
+    }
+    form.form {
+        padding: 27px 24px;
+    }
+    .form h1{
+        font-size: 24px;
+    } 
+    .form p{
+        font-size: 15px;
+    } 
+    .option {
+        width: 41%;
+        margin-top: 10px;
+    }
+    .dawn-container {
+        justify-content: space-between;
+    }
+    p.result {
+        width: 78%;
+    }
+}
