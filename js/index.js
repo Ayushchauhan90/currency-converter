@@ -17,7 +17,7 @@ function handleclick() {
     .then((res) => {
       var data1 = res.rates[to2];
       var output = data1 * amount2;
-
+// amount section conditation 
       if (amount2 === "") {
         $(".result").text("**Enter a number").addClass("before-result");
       } else if (output <= 999) {
