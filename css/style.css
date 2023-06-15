@@ -25,6 +25,7 @@ input#amount {
     width: 78%;
     padding: 4px 9px;
     border-radius: 6px;
+    display: none; 
 }
 button#calculate {
     padding: 5px 16px;
