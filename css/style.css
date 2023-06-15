@@ -54,15 +54,16 @@ p.result {
         background-color: black;
     }
     .main-class {
-        width: 100%;
+        width: 97%;
         padding: 0;
-        margin-top: 52px;
+        position: fixed;
+        top: 17%;
     }
     form.form {
         padding: 27px 24px;
     }
     .form h1{
-        font-size: 24px;
+        font-size: 31px;
     } 
     .form p{
         font-size: 15px;
@@ -71,10 +72,15 @@ p.result {
         width: 41%;
         margin-top: 10px;
     }
+    #amount{
+        width: 97%;
+    }
     .dawn-container {
         justify-content: space-between;
+        margin-top: 22px;
     }
     p.result {
-        width: 78%;
+        margin-top: 31px;
+        width: 76%;
     }
 }
